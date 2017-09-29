@@ -9,3 +9,10 @@ set mark-symlinked-directories On
 set show-all-if-ambiguous On
 set show-all-if-unmodified On
 set visible-stats On
+
+set editing-mode vi
+$if mode=vi
+# Set up a Ctrl+l key-bind for vi's insert-mode
+set keymap vi insert
+  Control-l: clear-screen
+$endif
