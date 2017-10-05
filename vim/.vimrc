@@ -1,5 +1,6 @@
 syntax on " use syntax highlighting
 set nocompatible
+colorscheme elflord
 
 " Line numberings
 set number
