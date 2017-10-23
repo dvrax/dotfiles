@@ -3,8 +3,13 @@ set nocompatible
 colorscheme elflord
 
 " Line numberings
-set number
-set relativenumber
+" set number
+" set relativenumber
+
+
+" Search Settings
+set incsearch
+set hlsearch
 
 set showcmd
 
@@ -29,6 +34,9 @@ let g:ale_lint_delay=1000       " 1 Second delay after typing before linting
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 let g:ale_fix_on_save = 1
+
+" Prettier settings
+let g:ale_javascript_prettier_options = '--print-width 120 --tab-width 4'
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
