@@ -2,12 +2,15 @@ $include /etc/inputrc
 "\C-p": history-search-backward
 "\C-n": history-search-forward
 
+# Ignore case when tab completing
 set completion-ignore-case on
 set colored-stats On
-set completion-prefix-display-length 3
+# set completion-prefix-display-length 3
 set mark-symlinked-directories On
+# Show completions with one tab press
 set show-all-if-ambiguous On
 set show-all-if-unmodified On
+# Character denoting filetype added to completion
 set visible-stats On
 
 set editing-mode vi
