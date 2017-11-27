@@ -26,7 +26,7 @@ filetype plugin indent on
 set backspace=indent,eol,start
 
 " Line to be highlighted
-:set colorcolumn=120
+:set colorcolumn=80
 
 " ALE Settings
 "     _    _     _____ 
