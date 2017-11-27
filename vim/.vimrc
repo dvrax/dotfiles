@@ -29,6 +29,12 @@ set backspace=indent,eol,start
 :set colorcolumn=120
 
 " ALE Settings
+"     _    _     _____ 
+"    / \  | |   | ____|
+"   / _ \ | |   |  _|  
+"  / ___ \| |___| |___ 
+" /_/   \_\_____|_____|
+                     
 let g:ale_lint_delay=1000       " 1 Second delay after typing before linting
 
 let g:ale_fixers = {}
@@ -37,6 +43,14 @@ let g:ale_fix_on_save = 1
 
 " Prettier settings
 let g:ale_javascript_prettier_options = '--print-width 120 --tab-width 4'
+
+"                  _                _        _             
+"  _ __  _   _  __| | ___   ___ ___| |_ _ __(_)_ __   __ _ 
+" | '_ \| | | |/ _` |/ _ \ / __/ __| __| '__| | '_ \ / _` |
+" | |_) | |_| | (_| | (_) | (__\__ \ |_| |  | | | | | (_| |
+" | .__/ \__, |\__,_|\___/ \___|___/\__|_|  |_|_| |_|\__, |
+" |_|    |___/                                       |___/ 
+let g:pydocstring_enable_mapping = 0
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
