@@ -14,12 +14,11 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done
 unset file
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
+
+if [ -x "$(command -v brew)" ]; then
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+        . `brew --prefix`/etc/bash_completion
+    fi
 fi
-
-# Init jenv
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi
-
 
 export PATH="$HOME/.cargo/bin:$PATH"
