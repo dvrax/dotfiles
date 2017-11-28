@@ -1,10 +1,13 @@
 syntax on " use syntax highlighting
 set nocompatible
-colorscheme elflord
+colorscheme slate
 
 " Line numberings
 " set number
 " set relativenumber
+
+" Show position in file
+set ruler
 
 
 " Search Settings
