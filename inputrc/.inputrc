@@ -12,6 +12,9 @@ set show-all-if-ambiguous On
 set show-all-if-unmodified On
 # Character denoting filetype added to completion
 set visible-stats On
+# Colored completions
+set colored-stats on
+set colored-completion-prefix on
 
 set editing-mode vi
 $if mode=vi
