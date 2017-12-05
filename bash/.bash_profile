@@ -22,3 +22,4 @@ if [ -x "$(command -v brew)" ]; then
 fi
 
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
