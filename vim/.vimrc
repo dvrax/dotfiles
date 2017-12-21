@@ -31,7 +31,6 @@ set backspace=indent,eol,start
 " Line to be highlighted
 :set colorcolumn=80
 
-" ALE Settings
 "     _    _     _____ 
 "    / \  | |   | ____|
 "   / _ \ | |   |  _|  
@@ -43,6 +42,11 @@ let g:ale_lint_delay=1000       " 1 Second delay after typing before linting
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 let g:ale_fix_on_save = 1
+
+" Disable ghc and use stack ghc
+let g:ale_linters = {
+\   'haskell': ['stack-ghc'],
+\}
 
 " Prettier settings
 let g:ale_javascript_prettier_options = '--print-width 120 --tab-width 4'
