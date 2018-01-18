@@ -1,6 +1,6 @@
 syntax on " use syntax highlighting
 set nocompatible
-colorscheme slate
+colorscheme acme
 
 " Line numberings
 " set number
