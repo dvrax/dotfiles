@@ -1,6 +1,6 @@
 syntax on " use syntax highlighting
 set nocompatible
-colorscheme acme
+colorscheme zellner
 
 " Line numberings
 " set number
