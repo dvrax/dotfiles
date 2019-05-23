@@ -55,7 +55,7 @@ let g:ale_linters = {
 \}
 
 " Prettier settings
-let g:ale_javascript_prettier_options = '--print-width 120 --tab-width 4'
+" let g:ale_javascript_prettier_options = ''
 
 " Load all plugins now.
 " Plugins need to be added to runtimepath before helptags can be generated.
