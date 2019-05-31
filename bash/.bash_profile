@@ -23,6 +23,14 @@ if [ -x "$(command -v brew)" ]; then
 fi
 LC_CTYPE=$TEMPLC_CTYPE
 
+# Append instead of overwrite history
+shopt -s histappend
+# Join multiline commands in history
+shopt -s cmdhist
+export HISTSIZE=10000
+export HISTCONTROL=ignorespace
+export HISTTIMEFORMAT='%F %T '
+
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export GOPATH="$HOME/go"
