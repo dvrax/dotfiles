@@ -30,7 +30,7 @@ filetype plugin indent on
 set backspace=indent,eol,start
 
 " Line to be highlighted
-:set colorcolumn=80
+:set colorcolumn=100
 
 "     _    _     _____ 
 "    / \  | |   | ____|
@@ -42,6 +42,7 @@ let g:ale_lint_delay=1000       " 1 Second delay after typing before linting
 
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fixers['python'] = ['black']
 let g:ale_fix_on_save = 1
 
 let g:ale_completion_enabled = 1
@@ -53,6 +54,8 @@ let g:ale_linters = {
 \   'rust': ['rls'],
 \   'python': ['flake8'],
 \}
+
+let g:ale_python_flake8_options = '--max-line-length=100'
 
 " Prettier settings
 " let g:ale_javascript_prettier_options = ''
