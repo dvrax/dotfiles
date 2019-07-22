@@ -3,9 +3,9 @@ set nocompatible
 colorscheme slate
 set background=dark
 
-" Line numberings
-" set number
-" set relativenumber
+" Persist undo tree
+set undofile
+set undodir^=~/.vim/undo//
 
 " Show position in file
 set ruler
