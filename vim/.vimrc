@@ -51,7 +51,7 @@ let g:ale_completion_enabled = 1
 " Use rls
 let g:ale_linters = {
 \   'haskell': ['stack-ghc'],
-\   'rust': ['rls'],
+\   'rust': ['rls', 'rustfmt'],
 \   'python': ['flake8'],
 \}
 
