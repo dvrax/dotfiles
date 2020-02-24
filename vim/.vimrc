@@ -1,7 +1,8 @@
 syntax on " use syntax highlighting
 set nocompatible
-colorscheme slate
-set background=dark
+colorscheme morning
+silent! colorscheme base16-classic-light
+set background=light
 
 " Persist undo tree
 set undofile
@@ -43,6 +44,7 @@ let g:ale_lint_delay=1000       " 1 Second delay after typing before linting
 let g:ale_fixers = {}
 let g:ale_fixers['javascript'] = ['prettier']
 let g:ale_fixers['python'] = ['black']
+let g:ale_fixers['rust'] = ['rustfmt']
 let g:ale_fix_on_save = 1
 
 let g:ale_completion_enabled = 1

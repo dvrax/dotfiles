@@ -23,6 +23,19 @@ if [ -x "$(command -v brew)" ]; then
 fi
 LC_CTYPE=$TEMPLC_CTYPE
 
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+if alias base16_classic-light &>/dev/null; then
+    base16_classic-light
+else
+    echo "Base 16 theme not found"
+fi
+
+
 # Append instead of overwrite history
 shopt -s histappend
 # Join multiline commands in history
